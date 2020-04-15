@@ -1,0 +1,15 @@
+{% extends "base_layout.html" %}
+
+{% block content %}
+  <h1>Demixer</h1>
+
+  <p>We are processing your track...</p>
+  <p>It might take a minute, don't close this page.</p>
+
+  {% load static %}
+  <img src="{% static "images/cropped_load.gif" %}" alt="animated" />
+
+  <script>window.location.href = 'process4';</script>
+  
+
+{% endblock %}

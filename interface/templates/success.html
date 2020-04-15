@@ -1,0 +1,13 @@
+{% extends "base_layout.html" %}
+
+{% block content %}
+<h1>Demixer</h1>
+<p>Your track has been successfully demixed! Download is about to start.</p>
+
+{% load static %}
+<img src="{% static "images/cropped_homer2.jpeg" %}" alt="My image" />
+
+<script>window.location.href = 'download';</script>
+
+<a class="btn btn-primary" href="{% url 'home'%}">Back to homepage.</a>
+{% endblock %}
