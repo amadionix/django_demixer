@@ -10,8 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 import sys
-sys.path.append('~/.heroku/python/lib/python3.7/site-packages/ffmpeg')
-sys.path.append('~/.heroku/python/lib/python3.7/site-packages/ffprobe')
+sys.path.append('app/.heroku/python/lib/python3.7/site-packages/ffprobe')
 
 import os
 
