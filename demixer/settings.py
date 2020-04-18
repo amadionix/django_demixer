@@ -134,7 +134,7 @@ DATABASES['default'].update(db_from_env)
 STATIC_ROOT = os.path.join(BASE_DIR, 'interface', 'static')
 
 # The URL to use when referring to static files (where they will be served from)
-STATIC_URL = os.path.join(BASE_DIR, 'interface', 'static')
+STATIC_URL = os.path.join(BASE_DIR, 'interface', 'static/')
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
