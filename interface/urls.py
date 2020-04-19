@@ -16,4 +16,3 @@ urlpatterns = [
     path('select4/download/', views.download, name='download'),
 ]
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
