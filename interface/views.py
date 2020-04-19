@@ -17,7 +17,7 @@ import regex
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-uploads_path = os.path.join(BASE_DIR, 'uploads')
+uploads_path = os.path.join(BASE_DIR, 'media')
 output_path = os.path.join(uploads_path, 'output')
 tmp = os.path.join(uploads_path, 'demixed_track')
 
