@@ -45,8 +45,8 @@ def select4(request):
     return render(request, 'process4.html')
 
 def process2(request):
-    separator = Separator('spleeter:2stems')
-    separator.separate_to_file(os.path.join(uploads_path, name), output_path)
+    # separator = Separator('spleeter:2stems')
+    # separator.separate_to_file(os.path.join(uploads_path, name), output_path)
     return render(request, 'success.html')
 
 def process4(request):
@@ -58,12 +58,12 @@ def download(request):
     global name
     stripped_name = os.path.splitext(name)[0]
     tmp = os.path.join(uploads_path, stripped_name)
-    shutil.make_archive(tmp, 'zip', os.path.join(output_path, stripped_name))
-    archived_file_path = tmp + '.zip'
-    zip_file = open(archived_file_path, 'rb')
+    # shutil.make_archive(tmp, 'zip', os.path.join(output_path, stripped_name))
+    # archived_file_path = tmp + '.zip'
+    # zip_file = open(archived_file_path, 'rb')
 
     # obj = Song.objects.get(pk=1)
     # obj.song.delete()
 
-    return FileResponse(zip_file)
-
+    # return FileResponse(zip_file)
+    return FileResponse(os.path.join(uploads_path, name))
