@@ -14,6 +14,7 @@ import django_heroku
 import sys
 # sys.path.append('/app/.heroku/python/bin/python')
 
+
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
